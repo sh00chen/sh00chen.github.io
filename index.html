@@ -8,8 +8,9 @@
     <style>
       body{
         position: absolute;
-        color:#dfbc5e;
-        background-color:#b51f09;
+        /* color:#dfbc5e; */
+        color:#b51f09;
+        background-color:black;
         text-shadow: 3px 5px 3px #ee6146;
         /* border: 6px solid #e6e0ae; */
         width: 500px;
@@ -27,34 +28,132 @@
         opacity: 1;
         border-radius: 15px 50px 30px 5px;
       }
+      #newyear {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 1200px;
+        opacity: .5;
+        border-radius: 0px 0px 0px 0px;
+        z-index:-100;
+      }
       iframe {
         position: fixed;
         width: 1000px;
         height: 536px;
-        top: 380px;
-        right: 5vw;
+        top: 450px;
+        right: 40vw;
         border-radius: 100px 100px 100px 0px;
+        z-index: -10;
       }
       video{
         position: fixed;
-        width: 20vw;
+        width: 30vw;
         top: 90px;
-        right: 40vw;
+        left: 600px;
         border-radius: 100px 0px 100px 100px;
+        z-index: -5;
+      }
+      #intro {
+        position: absolute;
+        color:#b51f09;
+        text-shadow: 0px 0px 0px;
+        width: 500px;
+        left: 300px;
+        top: 20px;
+        font-size: 20px;
+        font-family: Georgia;
+        text-align:left;
+        z-index: 10;
+      }
+      #different {
+        position: fixed;
+        color:white;
+        text-shadow: 0px 0px 0px;
+        width: 300px;
+        left: 1000px;
+        top: 420px;
+        font-size: 15px;
+        font-family: Georgia;
+        text-align:left;
+        z-index: 10;
+      }
+      #tigeryear {
+        position: absolute;
+        color:white;
+        text-shadow: 0px 0px 0px;
+        width: 500px;
+        left: 1100px;
+        top: 50px;
+        font-size: 80px;
+        font-family: Georgia;
+        text-align:Left;
+        z-index: -10;
+      }
+      #courage {
+        position: absolute;
+        color:blue;
+        text-shadow: 0px 0px 0px;
+        font-size: 80px;
+        font-family: Georgia;
+        text-align:Left;
+        z-index: 10;
+      }
+      #power {
+        position: absolute;
+        color:yellow;
+        text-shadow: 0px 0px 0px;
+        font-size: 30px;
+        font-family: Georgia;
+        text-align:Left;
+        z-index: 10;
+      }
+      #chinese {
+        position: absolute;
+        color:yellow;
+        text-shadow: 3px 5px 3px #ee6146;
+        font-size: 80px;
+        font-family: Georgia;
+        text-align:Left;
+        z-index: 10;
+      }
+      #link:visited{
+        color:#black;
+        text-shadow: 3px 5px 3px black;
+      }
+      #link:hover{
+        color:blue;
+      }
+      #link:active{
+        color:red;
       }
     </style>
   </head>
   <body>
+    <div id=intro>
+      Chinese zodiac, or shengxiao (/shnng-sshyao/ ‘born resembling'), is represented by 12 zodiac animals. In order, they are the Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, and Pig.
+    </div>
+    <!-- <div id=different>
+      Chinese people believe that a person's horoscope, personality, and love compatibility are closely associated with his/her Chinese zodiac sign, determined by his/her birth year.
+    </div> -->
+    <div id=tigeryear>
+      The tiger embodies <span id=courage>courage and bravery</span>, so the new year could symbolize resilience and strength — even in times of struggle, scholar Jonathan H.X. Lee said. ... The holiday, which is observed by primarily East Asian countries and Vietnam, in addition to their diasporas, ushers in the Year of the Tiger.
+      <span id=power>
+        It goes to show the power of belief, right, and the power of this cultural kind of folklore.
+      </span>
+    </div>
+  </div id=greet>
     Happy Chinese New Year!
     </br>
-    虎年快乐！
+    <span id=chinese>虎年快乐！</span>
     <video loop controls src="gongxifacai.mp4"></video>
     </br>
     Happy Chinese New Year!
     </br>
-    虎年快乐！
+    <span id=chinese><a href="https://www.chinahighlights.com/travelguide/chinese-zodiac/tiger.htm" id=link>虎年</a>快乐！</span>
+  </div>
     <img src = "tiger.gif">
-    <img2 src = "fireworks.gif">
+    <img id=newyear src = "newyear.png">
     <iframe src="https://www.youtube.com/embed/_mLxQfrNbHk"></iframe>
     <!-- <iframe src="https://www.youtube.com/embed/_VCAeYVYmyI"></iframe> -->
     <audio controls src="fireworks.mp3"></audio>
