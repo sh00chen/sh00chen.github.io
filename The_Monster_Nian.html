@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      The Monster Nian
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="nian.js"></script>
+    <style>
+      body{
+        /* red */
+        /* background-color:#FF0000; */
+          background-color:black;
+          /* cursor: */
+      }
+      #video{
+        position:fixed;
+        width:40vw;
+        top:475px;
+        right:50px;
+        /* background-color:white; */
+        display: none;
+        /* border: 10px dotted white; */
+        cursor: move;
+      }
+      #text_shortversion {
+        position:absolute;
+        /* width:800px; */
+        top:30px;
+        left:50px;
+        right:50px;
+        font-size:80px;
+        line-height:80px;
+        color:white;
+        text-align:left;
+        /* text-shadow: 1px 1px 1px ##FF0000; */
+      }
+      #catch{
+        text-decoration: underline;
+        font-size: 80px;
+        color:white;
+
+      }
+      #catch:hover{
+        color:#ff0000;
+      }
+      #red{
+        text-decoration: underline dotted;
+      }
+      #red:hover{
+        cursor:pointer;
+        color:grey;
+        /* background:#ff0000; */
+      }
+      #red:click{
+        background:#ff0000;
+      }
+      #noises:hover{
+        cursor:pointer;
+        color:grey;
+        /* font-size:200px; */
+      }
+      #noises{
+        text-decoration: underline dotted;
+
+      }
+      #fire{
+        text-decoration: underline dotted;
+      }
+      #fire:hover{
+        cursor:pointer;
+        color:grey;
+      }
+      #learn{
+        font-size: 30px;
+        text-decoration: underline;
+        color:
+      }
+      #learn:hover{
+        cursor:pointer;
+        color:grey;
+      }
+      #fire_gif{
+        position:fixed;
+        top:100px;
+        left:500px;
+        width:300px;
+        display: none;
+      }
+      #bg1{
+        width:300px;
+        height:300px;
+        color:red;
+      }
+      #bianpao{
+        display:none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id= -->
+    <img id=fire_gif src = "fire.gif">
+    <video id=video loop controls src="story_of_nian.mp4"></video>
+    <div id=bg1></div>
+    <div id=text_shortversion>
+      Nian, a hideous beast believed to feast on human flesh on New Year's day. Because Nian feared the colour <span id=red>red</span>, <span id=noises>loud noises</span>, and <span id=fire>fire</span>, red paper decorations were pasted to doors, lanterns were burned all night, and firecrackers were lit to frighten the beast away.
+
+      <span id=learn>more</span>
+      <br><br>
+      <a href=catch.html id=catch> Hey,<br> Catch Nian! </a>
+    </div>
+    <audio id=bianpao controls src="bianpao.mp3"></audio>
+  <body>
+</html>
