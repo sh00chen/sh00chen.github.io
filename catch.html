@@ -1,0 +1,276 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      The Monster Nian
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="find.js"></script>
+    <style>
+      body{
+        /* red */
+        /* background-color:#FF0000; */
+          background-color:black;
+          color:grey;
+          /* cursor: */
+      }
+
+      #game_title {
+        position:fixed;
+        color: #FF0000;
+        top:800px;
+        left:50px;
+        font-size:80px;
+        text-align:right;
+        /* background:red; */
+      }
+      #game_title:hover {
+            img src="newyear.png";
+          }
+          #can {
+            font-size:20px;
+          }
+
+
+      #find_me1 {
+        position:fixed;
+        top:200px;
+        left:880px;
+        font-size:30px;
+      }
+      #find_me1:hover {
+      cursor:help;
+      }
+      #no1{
+        position:fixed;
+        top:200px;
+        left:880px;
+        font-size:50px;
+        color:white;
+        display:none;
+      }
+      /* #rectangle1 {
+        width:200px;
+        height:1000px;
+        background:blue;
+      } */
+      #bg1 {
+        width:2000px;
+        height:1000px;
+        background:black;
+        }
+
+
+      #find_me2 {
+        position:fixed;
+        top:700px;
+        left:360px;
+        font-size:30px;
+      }
+      #find_me2:hover {
+      cursor:help;
+      }
+      #no2 {
+        position:fixed;
+        top:600px;
+        left:300px;
+        font-size:100px;
+        display:none;
+        color:white;
+      }
+
+      #find_me3 {
+        position:fixed;
+        top:760px;
+        left:1000px;
+        font-size:30px;
+      }
+      #find_me3:hover {
+      cursor:help;
+      }
+      #no3 {
+        position:fixed;
+        top:600px;
+        left:800px;
+        font-size:300px;
+        color:grey;
+        display:none;
+        color:white;
+      }
+
+      #find_me4 {
+        position:fixed;
+        top:500px;
+        left:800px;
+        font-size:30px;
+      }
+      #find_me4:hover {
+      cursor:help;
+      }
+      #no4 {
+        position:fixed;
+        top:500px;
+        left:700px;
+        font-size:75px;
+        display:none;
+        color:white;
+      }
+
+      #find_me5 {
+        position:fixed;
+        top:80px;
+        left:500px;
+        font-size:30px;
+      }
+      #find_me5:hover {
+      cursor:help;
+      }
+      #no5 {
+        position:fixed;
+        top:80px;
+        left:500px;
+        font-size:30px;
+        color:white;
+        display:none;
+      }
+
+      #find_me6 {
+        position:fixed;
+        top:20px;
+        left:1300px;
+        font-size:30px;
+      }
+      #find_me6:hover {
+      cursor:help;
+      }
+      #no6 {
+        position:fixed;
+        top:20px;
+        left:1300px;
+        font-size:30px;
+        color:white;
+        display:none;
+      }
+
+      #find_me7 {
+        position:fixed;
+        top:700px;
+        left:1620px;
+        font-size:30px;
+      }
+      #find_me7:hover {
+      cursor:help;
+      }
+      #no7 {
+        position:fixed;
+        top:700px;
+        left:1620px;
+        font-size:55px;
+        display:none;
+        color:white;
+      }
+
+      #find_me8 {
+        position:fixed;
+        top:220px;
+        left:1000px;
+        font-size:30px;
+      }
+      #find_me8:hover {
+      cursor:help;
+      }
+      #no8 {
+        position:fixed;
+        top:220px;
+        left:1000px;
+        font-size:90px;
+        display:none;
+        color:white;
+      }
+
+      #find_me9 {
+        position:fixed;
+        top:320px;
+        left:100px;
+        font-size:30px;
+      }
+      #find_me9:hover {
+      cursor:help;
+      }
+      #no9 {
+        position:fixed;
+        top:320px;
+        left:100px;
+        font-size:80px;
+        display:none;
+        color:white;
+      }
+
+      #find_me10 {
+        position:fixed;
+        top:500px;
+        left:1500px;
+        font-size:30px;
+      }
+      #find_me10:hover {
+      cursor:help;
+      }
+      #maybe{
+        position:fixed;
+        top:500px;
+        left:1500px;
+        font-size:30px;
+        display:none;
+      }
+      #yes {
+        position:fixed;
+        top:500px;
+        left:1500px;
+        font-size:30px;
+        display:none;
+        color:#FF0000;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id=game_title> Catch Nian<br><span id=can>IF <span id=didit>YOU CAN</span></span> </div>
+    <div id="bg2"></div>
+    <div id="rectangle1"></div>
+
+    <div id=find_me1> find me </div>
+    <div id=no1> nahh </div>
+
+    <div id=find_me2> find me </div>
+    <div id=no2> wrong! </div>
+
+    <div id=find_me3> find me </div>
+    <div id=no3> stupid </div>
+
+    <div id=find_me4> find me </div>
+    <div id=no4> I'm unstoppable! </div>
+
+    <div id=find_me5> find me </div>
+    <div id=no5> HAHAHAHA </div>
+
+    <div id=find_me6> find me </div>
+    <div id=no6> well done <br> but no</div>
+
+    <div id=find_me7> find me </div>
+    <div id=no7> Nope! </div>
+
+    <div id=find_me8> find me </div>
+    <div id=no8> forget it </div>
+
+    <div id=find_me9> find me </div>
+    <div id=no9> bye </div>
+
+    <div id=find_me10> find me </div>
+    <div id=maybe> you sure? </div>
+    <div id=yes> Dang, you got me. </div>
+
+
+  <body>
+</html>
