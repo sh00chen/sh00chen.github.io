@@ -61,7 +61,7 @@ $("#video").draggable();
             $("#no6").show();
           });
 
-          $("#find_me7").hover(function(){
+          $("#find_me7").click(function(){
             $(this).hide();
             $("#no7").show();
           });
