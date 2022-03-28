@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Swinging
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <style>
+      body {
+  background: black;
+  overflow: hidden;
+}
+
+p {
+  letter-spacing: 1px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  /* left:50px; */
+  text-align:center;
+  color:white;
+  animation: swing_text 2s ease-in-out infinite;
+  /* white-space: pre; */
+}
+
+
+
+#a{
+  position:relative;
+  text-align:center;
+  top:10px;
+  /* left:300px; */
+  letter-spacing: 2px;
+  font-size:5px;
+}
+#a:hover {
+  letter-spacing: 10px;
+  /* font-size:15px; */
+}
+#a:click {
+  /* letter-spacing: 20px; */
+  font-size: 20px;
+}
+
+#a1{
+  position:relative;
+  text-align:center;
+  font-size:5px;
+  top:10px;
+  /* left:800px; */
+  letter-spacing: 2px;
+}
+#a1:click {
+  /* letter-spacing: 20px; */
+  font-size: 20px;
+}
+#a1:hover {
+  letter-spacing: 20px;
+  /* font-size: 20px; */
+}
+
+
+
+#a2{
+  position:relative;
+  text-align:center;
+  font-size:5px;
+  top:10px;
+  /* left:800px; */
+  letter-spacing: 2px;
+}
+#a2:hover {
+  letter-spacing: 30px;
+  /* font-size: 20px; */
+}
+#a2:click {
+  /* letter-spacing: 20px; */
+  font-size: 20px;
+}
+
+
+#b{
+  position:relative;
+  text-align:center;
+  top:20px;
+  /* left:100px; */
+  letter-spacing: 10px;
+}
+#b:hover {
+  letter-spacing: 1em;
+}
+
+#c{
+  position:relative;
+  text-align:right;
+  top:20px;
+  left:-200px;
+  letter-spacing: 5px;
+}
+#c:hover {
+  letter-spacing: 2em;
+}
+
+#d:hover {
+  letter-spacing: 2em;
+  /* font-size: 20px; */
+}
+
+
+
+h1 {
+  text-align: center;
+  margin: 150px auto;
+  font-size: 3em;
+  /* font-family: arial; */
+  font-weight: 30;
+  color: transparent;
+  overflow: hidden;
+  background: linear-gradient(300deg, black 30%, transparent 30%, transparent 70%, black 70%),
+  linear-gradient(-45deg, black 30%, transparent 30%, transparent 70%, black 70%),
+  linear-gradient(90deg, black 30%, transparent 30%, transparent 70%, black 70%)grey;
+  /* background-size: 20px 20px, 20px 20px, 1px 1px; */
+  background-position: 0 0, 0 0, 0 0;
+  -webkit-background-clip: text;
+  /* -webkit-text-stroke: 4px white; */
+  /* filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 2px crimson); */
+  animation: bg-shift 3s ease-in-out infinite alternate-reverse, swing 3s ease-in-out infinite;
+  /* animation: swing 2s ease-in-out infinite; */
+  letter-spacing: 1px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  left:50px;
+  text-align:center;
+}
+
+h1::before {
+  content: "O winds - ";
+  position: absolute;
+  background: linear-gradient(transparent 30%, white, transparent 70%);
+  -webkit-background-clip: text;
+  animation: bg-shift2 2s ease-in-out infinite alternate-reverse;
+  /* -webkit-text-stroke: 2px red; */
+}
+
+@keyframes bg-shift {
+  from {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes bg-shift2 {
+  0% {
+    background-position: 0 50px;
+  }
+
+  50% {
+
+    background-position: 0 -50px;
+
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform-origin: left;
+    transform: perspective(550px)rotatex(10deg);
+  }
+
+  50% {
+    transform: perspective(550px)rotatex(-10deg);
+  }
+
+  100% {
+    transform-origin: left;
+    transform: perspective(550px)rotatex(10deg);
+
+  }
+}
+
+.scroll-left {
+ /* height: 50px; */
+ overflow: hidden;
+ position: relative;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 20px;
+ /* text-align: center; */
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 30s linear infinite;
+
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateY(80%);
+ }
+ 100% {
+ transform: translateY(-80%);
+ }
+
+}
+
+    </style>
+    <!-- <h1 id="d"> Wind </h1> -->
+    <h1 id="d"> O winds -  </h1>
+
+  <head>
+    <body>
+    <div class="scroll-left">
+      <p id="a">Talk to my heart, O winds - <br>
+        &#0009;Talk to my heart to-night;<br>
+        &#0009;&#0009;My spirit always finds<br>
+        &#0009;&#0009;&#0009;With you a new delight - <br>
+        &#0009;&#0009;&#0009;&#0009;Finds always new delight,<br>
+        &#0009;&#0009;&#0009;&#0009;&#0009;In your silver talk at night.
+      </p>
+    </div>
+    <p id=a>Talk to my heart, O winds - <br>
+      &#0009;Talk to my heart to-night;<br>
+      &#0009;&#0009;My spirit always finds<br>
+      &#0009;&#0009;&#0009;With you a new delight - <br>
+      &#0009;&#0009;&#0009;&#0009;Finds always new delight,<br>
+      &#0009;&#0009;&#0009;&#0009;&#0009;In your silver talk at night.
+    </p>
+
+    <p id="a1">Give me your soft embrace<br>
+      As you used to long ago,<br>
+      In your shadowy trysting-place,<br>
+      When you seemed to love me so - <br>
+      When you sweetly kissed me so.<br>
+      On the green hills, long ago.
+    </p>
+
+    <p id="a2">Tell me, for oft you go,<br>
+      Winds - lovely winds of night -<br>
+      About the chambers low,<br>
+      With sheets so dainty white,<br>
+      If they sleep through all the night<br>
+      In the beds so chill and white?
+    </p>
+
+<!-- <p id="a">Talk to my heart, O winds - <br></p> -->
+      <!-- <p id="b">Talk to my heart to-night;<br>My spirit always finds</p>
+
+          <div class="scroll-left">
+      <p id="c">    With you a new delight -<br>
+          Finds always new delight,<br>  </p>
+            </div>
+
+
+      <p id="a">In your silver talk at night.<br></p>
+
+      <p id="a10">Give me your soft embrace<br>As you used to long ago,<br></p>
+          <div class="scroll-left">
+      <p id="b">In your shadowy trysting-place,<br>My spirit always finds</p>
+      </div>
+      <p id="c">   When you seemed to love me so - -<br>
+          When you sweetly kissed me so.<br>  </p>
+
+      <p id="a">On the green hills, long ago.<br></p>
+      </body> -->
+</html>
